@@ -1,0 +1,5 @@
+sacremoses
+torch
+transformer
+peft
+datetime
