@@ -17,7 +17,7 @@ def load_model():
     """Load the model and tokenizer with caching to avoid reloading on every interaction"""
     try:
         # Path to fine-tuned model
-        model_path = "/content/BioGPT_weights"
+        model_path = "Model_Weights"
 
         if not os.path.exists(model_path):
             st.error(f"Model not found at {model_path}. Please run training first.")
@@ -171,4 +171,5 @@ Provide 1 specific, actionable interventions based on TBI management guidelines.
     st.caption("Note: This tool is for educational purposes only. Always follow your institution's protocols and consult with senior clinicians when making patient care decisions.")
 
 if __name__ == "__main__":
+
     main()
